@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/dart
-# Edit at https://www.toptal.com/developers/gitignore?templates=dart
+# Created by https://www.toptal.com/developers/gitignore/api/dart,firebase
+# Edit at https://www.toptal.com/developers/gitignore?templates=dart,firebase
 
 ### Dart ###
 # See https://www.dartlang.org/guides/libraries/private-files
@@ -34,7 +34,16 @@ doc/api/
 # dotenv environment variables file
 .env
 
-# End of https://www.toptal.com/developers/gitignore/api/dart
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
+
+# End of https://www.toptal.com/developers/gitignore/api/dart,firebase
 
 coverage/
 *.g.dart
