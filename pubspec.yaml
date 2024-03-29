@@ -1,0 +1,44 @@
+name: gerafrequencia_web
+description: "A new Flutter project."
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  intl: ^0.19.0
+  dartx: ^1.2.0
+  easy_mask: ^2.0.1
+  file_saver: ^0.2.12
+  google_fonts: ^6.2.1
+  flutter_bloc: ^8.1.5
+  file_picker: ^8.0.0+1
+  table_calendar: ^3.1.1
+  flutter_form_bloc: ^0.31.0
+  responsive_framework: ^1.4.0
+  gerafrequencia:
+    git: https://github.com/enzo-santos/gerafrequencia
+  archive: ^3.4.10
+  copy_with_extension: ^5.0.4
+  http: ^1.2.1
+  get_it: ^7.6.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  copy_with_extension_gen: ^5.0.4
+  build_runner: ^2.4.9
+  mockito: ^5.4.4
+
+flutter:
+  uses-material-design: true
+
+dependency_overrides:
+  intl: 0.19.0
