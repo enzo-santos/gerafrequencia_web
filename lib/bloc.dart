@@ -240,7 +240,7 @@ class AppBloc extends Cubit<AppState> {
   }
 
   void onMonthSelected(DateTime dt) {
-    final Properties props = state.currentProperties ?? Properties.empty();
+    final Properties props = state.activeProperties ?? Properties.empty();
     emit(state.copyWith(
       currentProperties: props.copyWith(
         config: Config(
@@ -257,7 +257,7 @@ class AppBloc extends Cubit<AppState> {
   }
 
   void setHeaderBytes(Uint8List? bytes) {
-    final Properties props = state.currentProperties ?? Properties.empty();
+    final Properties props = state.activeProperties ?? Properties.empty();
     emit(state.copyWith(
       currentProperties: props.copyWith(
         config: Config(
