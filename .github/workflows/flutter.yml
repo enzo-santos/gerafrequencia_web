@@ -33,15 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Export Firebase key
-        run: echo $GOOGLE_SERVICE_ACCOUNT_DATA > $HOME/gcloud.json
-
-      - name: Reference Firebase key
-        run: export GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud.json
-
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting:gerafrequencia --project theahert
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
