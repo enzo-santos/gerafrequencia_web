@@ -25,6 +25,7 @@ jobs:
         run: flutter build web
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
